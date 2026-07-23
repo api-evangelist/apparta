@@ -1,7 +1,17 @@
 aid: apparta
 name: Apparta
-description: Apparta is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Apparta is a Colombian hospitality technology company providing a reservation-management
+  and guest-engagement platform for restaurants, bars, and dining venues across Latin
+  America (Bogota, Medellin, Cali, Barranquilla). The SaaS product covers AI-assisted
+  table assignment and floor-plan zoning, no-show prevention with prepayments and
+  cancellation policies, a WhatsApp AI chatbot for automated bookings, CRM campaigns
+  over SMS/email/WhatsApp, POS integration, branded booking pages and digital menus,
+  and marketing connectors to Google, Google Maps, Instagram, TripAdvisor, and Facebook.
+  Apparta is offered in tiered monthly plans (Basico, Standard, Plus) and is a portfolio
+  company of 500 Global. No public developer API or OpenAPI surface is published as of
+  this profiling; higher tiers expose a WhatsApp Business API integration on behalf of
+  venues rather than a first-party Apparta API.
 url: https://raw.githubusercontent.com/api-evangelist/apparta/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +19,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
+image: https://tmp.apparta.co/img/banners.png
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Hospitality
+- Restaurants
+- Reservations
+- Booking
+- CRM
+- WhatsApp
+- Latin America
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/apparta-domain-security.yml
 - type: Website
   url: https://apparta.co
+- type: Pricing
+  url: https://apparta.co/#plan
+- type: SignUp
+  url: https://tmp.apparta.co/contactanos
+- type: Login
+  url: https://temp.apparta.co/
+- type: Support
+  url: https://tmp.apparta.co/contactanos
+- type: LinkedIn
+  url: https://www.linkedin.com/company/appartaco/
+- type: Instagram
+  url: https://www.instagram.com/appartacol/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
